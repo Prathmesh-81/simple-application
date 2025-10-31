@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body { text-align: center; font-family: Arial; margin-top: 50px; }
+        form { display: inline-block; }
+        input { display: block; margin: 8px auto; padding: 5px; width: 200px; }
+        .msg { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <form method="POST">
+    <input type="email" name="email" placeholder="Enter Email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <input type="submit" value="Login">
+</form>
+
+    <p class="msg">{{ msg }}</p>
+    <a href="{{ url_for('register') }}">New user? Register</a>
+</body>
+</html>
